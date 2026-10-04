@@ -1,28 +1,29 @@
-# LibreWolf settings
+# Redoubt settings
 
-LibreWolf settings for all platforms.
+The privacy configuration for [Redoubt](https://github.com/CPlusPlus17/Redoubt),
+a privacy-hardened Android browser built from Firefox's source and LibreWolf's
+privacy configuration. This repository is used as the `settings/` submodule of
+the Redoubt repository.
 
-We encourage users to find **their own setup** and to use our default
-configuration as something to build on top of.
-This is now easier thanks to the [overrides](https://librewolf.net/docs/settings/#where-do-i-find-my-librewolfoverridescfg).
+**This is LibreWolf's work.** It is a fork of
+[LibreWolf's settings](https://librewolf.dev/librewolf/settings), split into
+fragments shared by desktop and Android:
 
-## Useful links
+| file | what |
+|---|---|
+| `common.cfg` | preferences shared by desktop and Android |
+| `desktop.cfg` | desktop-only preferences (upstream LibreWolf) |
+| `android.cfg` | Android-only preferences and locks for Redoubt |
+| `librewolf.cfg` | generated: `common.cfg` + `desktop.cfg`, the file the desktop build ships (the name is an inherited code identifier, not branding) |
+| `distribution/policies.json` | enterprise policies (desktop) |
 
-- [Website](https://librewolf.net): read the docs.
-- [FAQ](https://librewolf.net/docs/faq): for any question you might have,
-and to help you creating your own pref file.
-- [All releases](https://librewolf.dev/librewolf/bsys6/releases).
-- Find us on:
-  - [Matrix](https://matrix.to/#/#librewolf:matrix.org)
-  - [Reddit](https://www.reddit.com/r/LibreWolf)
-  - [Lemmy](https://lemmy.ml/c/librewolf)
-  - [Mastodon](https://chaos.social/@librewolf)
+Redoubt is **not affiliated with or endorsed by the LibreWolf project**, and
+nothing here is supported by LibreWolf. Please report problems with these
+settings in Redoubt to the
+[Redoubt issue tracker](https://github.com/CPlusPlus17/Redoubt/issues), not to
+LibreWolf. For LibreWolf itself, see [librewolf.net](https://librewolf.net).
 
-## Notes and thanks
+LibreWolf's settings credit the research of [arkenfox](https://github.com/arkenfox)
+and the work of the Firefox team; that credit carries over here.
 
-- This repository benefits from the knowledge and research
-provided by [arkenfox](https://github.com/arkenfox), so special thanks to the project.
-We do not use arkenfox's `user.js` but we try to keep up with it,
-and we also consider it a great resource for users who want to find their own setup.
-- Many thanks to the Firefox team and to the people working on [bugzilla](https://bugzilla.mozilla.org/home).
-- Thanks to the whole LibreWolf community and to all the contributors of this repo.
+Licence: [MPL-2.0](LICENSE.txt).
